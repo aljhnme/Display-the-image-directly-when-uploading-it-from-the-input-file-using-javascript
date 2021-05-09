@@ -1,0 +1,1 @@
+# Display-the-image-directly-when-uploading-it-from-the-input-file-using-javascript
