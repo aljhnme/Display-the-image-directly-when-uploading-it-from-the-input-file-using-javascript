@@ -1,0 +1,23 @@
+
+
+<input type="file" onchange="get_img(this)">
+
+<div id="img_val">
+	
+</div>
+
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script type="text/javascript">
+	
+ function get_img(file)
+  {
+   if (file.files[0]) 
+      {
+      	var fileReader= new FileReader();
+      	fileReader.onload=function(e){
+      		$("#img_val").html('<img src="'+e.target.result+'" />');
+      }
+        fileReader.readAsDataURL(file.files[0]);
+      }
+  }
+</script>
